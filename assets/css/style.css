@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+menu {
+  grid-area: menu;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+
+}
+.grid-main-container {
+  display: grid;
+  gap: 1rem;
+  height: 100vh;
+  grid-template-areas:
+    "nav nav"
+    "menu main"
+    "footer footer";
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 85% 5%;
+}
+.grid-product-conteiner {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.flex-menu {
+  display: flex;
+  flex-direction: column;
+}
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-img{
+width: 10rem;
+}
+
